@@ -63,7 +63,7 @@ Systems and syntax will vary depending on OS etc, but a good Linux-based overvie
 
 It essentially comes to down to:
 
-* Use lusb command to identify usb cable ID
+* Use lsusb command to identify usb cable ID
 * Create ```/etc/udev/rules.d/99-usb-serial.rules```
 * Add line: ```SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", SYMLINK+="nuvo"```
 * Reboot, check for existence of ```/dev/nuvo```
